@@ -1,4 +1,4 @@
-# 🏠 HostelCare — Hostel Complaint Management System
+# 🏠 Amma Chandrawati Hostel — Hostel Complaint Management System
 
 HostelCare is a full-stack MERN web application designed to simplify hostel complaint management.
 
