@@ -100,8 +100,7 @@ npm install
 Create `.env`:
 
 ```env
-MONGO_URI=mongodb://aditi160500_db_user:hostel123@ac-qsidudt-shard-00-00.soe1rqt.mongodb.net:27017,ac-qsidudt-shard-00-01.soe1rqt.mongodb.net:27017,ac-qsidudt-shard-00-02.soe1rqt.mongodb.net:27017/?ssl=true&replicaSet=atlas-sq5omv-shard-0&authSource=admin&appName=HostelCare
-JWT_SECRET=JWT_SECRET=hostelcare_super_secret_key_2026
+MONGO_URI=your_mongo_url
 
 PORT=5000
 ```
