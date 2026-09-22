@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import API_URL from "../config/api";
 import ThemeToggle from "../components/ThemeToggle";
 
 function Login() {
@@ -12,7 +13,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/login",
+        `${API_URL}/login`,
         {
           email,
           password,

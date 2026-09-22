@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import API_URL from "../config/api";
 import Navbar from "../components/Navbar";
 
 function Dashboard() {
@@ -20,7 +21,7 @@ function Dashboard() {
       }
 
       const response = await axios.get(
-        "http://localhost:5000/profile",
+        `${API_URL}/profile`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -60,7 +61,7 @@ function Dashboard() {
       }
 
       const response = await axios.get(
-        "http://localhost:5000/notifications/unread-count",
+        `${API_URL}/notifications/unread-count`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

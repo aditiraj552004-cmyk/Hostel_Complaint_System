@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import API_URL from "../config/api";
 import Navbar from "../components/Navbar";
 
 function Notifications() {
@@ -15,7 +16,7 @@ function Notifications() {
   const fetchNotifications = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/notifications",
+        `${API_URL}/notifications`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -58,7 +59,7 @@ function Notifications() {
   const markAsRead = async (notificationId) => {
     try {
       const response = await axios.put(
-        `http://localhost:5000/notifications/${notificationId}/read`,
+        `${API_URL}/notifications/${notificationId}/read`,
         {},
         {
           headers: {
