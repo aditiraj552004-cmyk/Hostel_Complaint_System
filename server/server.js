@@ -21,7 +21,15 @@ const app = express();
 // Middleware
 // ========================================
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://hostel-complaint-system-dusky.vercel.app",
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 // Allow browser to access uploaded images
